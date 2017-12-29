@@ -1,12 +1,18 @@
-.botonera{
+.cuerpo{
+	border: 1px solid black;
 	width: 16%;
-	margin-left: 42%;
-    margin-top: 12%;
+	padding: 1%;
+	background-color: rgba(0,0,0,0.9);
 }
 .botonera button{
 	width: 50px;
 	height: 40px;
-	margin-bottom: 3px;
+	margin-bottom: 6px;
+}
+.pantalla{
+	background-color: rgba(247,243,239,0.6);
+	margin-bottom: 10px;
+	height: 60px;
 }
 body{
 	background-image: url(https://cdn2.hercampus.com/Sex%20Article%20.jpg);
