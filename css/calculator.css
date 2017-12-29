@@ -4,8 +4,26 @@
     margin-top: 12%;
 }
 .botonera button{
-	padding: 7px;
 	width: 50px;
 	height: 40px;
 	margin-bottom: 3px;
+}
+body{
+	background-image: url(https://cdn2.hercampus.com/Sex%20Article%20.jpg);
+}
+#reset{
+	background-color: blue;
+	color: white;
+}
+#igual{
+	background-color: rgb(255,119,0);
+	color: white;
+}
+.signo{
+	background-color: rgb(33,32,32);
+	color: white;
+}
+.numero{
+	background-color: rgb(104,102,100);
+	color: white;
 }
