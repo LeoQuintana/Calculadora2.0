@@ -4,33 +4,34 @@
 	<title>Calculadora</title>
 	<link rel="stylesheet" type="text/css" href="css/calculator.css">
 </head>
-<body>
+<body onload="init();">
 	<div class="cuerpo">
 		<div class="pantalla">
-			<h4>15</h4> 
+			<h4 id="resultado"></h4> 
 		</div>
 		<div class="botonera">
 			<button id="reset">C</button>
-			<button class="signo">/</button>
-			<button class="signo">X</button>
-			<button class="signo"><-</button>
-			<button class="numero">7</button>
-			<button class="numero">8</button>
-			<button class="numero">9</button>
-			<button class="signo">-</button>
-			<button class="numero">4</button>
-			<button class="numero">5</button>
-			<button class="numero">6</button>
-			<button class="signo">+</button>
-			<button class="numero">1</button>
-			<button class="numero">2</button>
-			<button class="numero">3</button>
-			<button class="signo">()</button>
-			<button class="numero">0</button>
-			<button class="numero">.</button>
+			<button id="division" class="signo">/</button>
+			<button id="multiplicacion" class="signo">X</button>
+			<button id="borrar" class="signo">Borrar</button>
+			<button id="siete" class="numero">7</button>
+			<button id="ocho" class="numero">8</button>
+			<button id="nueve" class="numero">9</button>
+			<button id="restar" class="signo">-</button>
+			<button id="cuatro" class="numero">4</button>
+			<button id="cinco" class="numero">5</button>
+			<button id="seis" class="numero">6</button>
+			<button id="mas" class="signo">+</button>
+			<button id="uno" class="numero">1</button>
+			<button id="dos" class="numero">2</button>
+			<button id="tres" class="numero">3</button>
+			<button id="parentesis" class="signo">( )</button>
+			<button id="cero" class="numero">0</button>
+			<button id="punto" class="numero">.</button>
 			<button class="numero">+/-</button>
 			<button id="igual">=</button>
 		</div>
 	</div>
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
