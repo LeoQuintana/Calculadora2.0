@@ -73,7 +73,7 @@ function init(){
 		operacion = "*";
 		limpiar();
 	}
-	operaciongi[0].onclick = function(e){
+	operacion[0].onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "/";
 		limpiar();
