@@ -1,15 +1,20 @@
 var operandoa;
 var operandob;
 var operacion;
+var operaciones = ['/', '*', '+', '-'];
+
 
 function init(){
 	var resultado = document.getElementById('resultado');
 	var reset = document.getElementById('reset');
-	/*var division = document.getElementById('division');
-	var multiplicacion = document.getElementById('multiplicacion');*/
+	/**/
+	var division = document.getElementById('division');
+	var multiplicacion = document.getElementById('multiplicacion');
 	var borrar = document.getElementById('borrar');
-	/*var restar = document.getElementById('restar');
-	var sumar = document.getElementById('mas');*/
+	/* */
+	var restar = document.getElementById('restar');
+	var sumar = document.getElementById('mas');
+	
 	var parentesis = document.getElementById('parentesis');
 	var punto = document.getElementById('punto');
 	var igual = document.getElementById('igual');
@@ -23,7 +28,6 @@ function init(){
 	var ocho = document.getElementById('ocho');
 	var nueve = document.getElementById('nueve');
 	var cero = document.getElementById('cero');
-	var operacion = ['division', 'multiplicacion', 'mas', 'restar'];
 
 	uno.onclick = function(e){
 		resultado.textContent = resultado.textContent + "1";
@@ -58,22 +62,22 @@ function init(){
 	reset.onclick = function(e){
 		resetear();
 	}
-	operacion[2].onclick = function(e){
+	sumar.onclick = function(e){
 		operandoa = resultado.textContent;
-		operacion = "+";
+		operacion = operaciones[2];
 		limpiar();
 	}
-	operacion[3].onclick = function(e){
+	restar.onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "-";
 		limpiar();
 	}
-	operacion[1].onclick = function(e){
+	multiplicacion.onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "*";
 		limpiar();
 	}
-	operacion[0].onclick = function(e){
+	division.onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "/";
 		limpiar();
@@ -94,17 +98,19 @@ function resetear (){
 }
 function resolver(){
 	var res = 0;
+
+	//var operaciones = ['/', '*', '+', '-'];
 	switch(operacion){
-		case "+":
+		case operaciones[2]:
 			res = parseFloat(operandoa) + parseFloat(operandob); 
 			break;
-		case "-":
+		case operaciones[3]:
 			res = parseFloat(operandoa) - parseFloat(operandob); 
 			break;
-		case "*":
+		case operaciones[1]:
 			res = parseFloat(operandoa) * parseFloat(operandob); 
 			break;
-		case "/":
+		case operaciones[0]:
 			res = parseFloat(operandoa) / parseFloat(operandob); 
 			break;
 	}
