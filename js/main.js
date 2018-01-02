@@ -5,11 +5,11 @@ var operacion;
 function init(){
 	var resultado = document.getElementById('resultado');
 	var reset = document.getElementById('reset');
-	var division = document.getElementById('division');
-	var multiplicacion = document.getElementById('multiplicacion');
+	/*var division = document.getElementById('division');
+	var multiplicacion = document.getElementById('multiplicacion');*/
 	var borrar = document.getElementById('borrar');
-	var restar = document.getElementById('restar');
-	var sumar = document.getElementById('mas');
+	/*var restar = document.getElementById('restar');
+	var sumar = document.getElementById('mas');*/
 	var parentesis = document.getElementById('parentesis');
 	var punto = document.getElementById('punto');
 	var igual = document.getElementById('igual');
@@ -23,6 +23,7 @@ function init(){
 	var ocho = document.getElementById('ocho');
 	var nueve = document.getElementById('nueve');
 	var cero = document.getElementById('cero');
+	var operacion = ['division', 'multiplicacion', 'mas', 'restar'];
 
 	uno.onclick = function(e){
 		resultado.textContent = resultado.textContent + "1";
@@ -57,22 +58,22 @@ function init(){
 	reset.onclick = function(e){
 		resetear();
 	}
-	mas.onclick = function(e){
+	operacion[2].onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "+";
 		limpiar();
 	}
-	restar.onclick = function(e){
+	operacion[3].onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "-";
 		limpiar();
 	}
-	multiplicacion.onclick = function(e){
+	operacion[1].onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "*";
 		limpiar();
 	}
-	division.onclick = function(e){
+	operaciongi[0].onclick = function(e){
 		operandoa = resultado.textContent;
 		operacion = "/";
 		limpiar();
